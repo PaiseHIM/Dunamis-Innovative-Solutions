@@ -1,0 +1,201 @@
+/* Global Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Ruhl";
+    src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Ruhl Medium";
+    src: url(/fonts/FrankRuhlLibre-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Vibes";
+    src: url(/fonts/GreatVibes-Regular.ttf );
+}
+
+html {
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(1.5rem + 1vw);
+    --header3: calc(3.5rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(.5rem + 1vw);
+    --big: calc(2rem + 1vw);
+    --specail-color: #44213e;
+    --background-color: #414141;
+    --gray_text: #383434;
+}
+
+h1 {
+    font-size: var(--header1);
+}
+
+li,
+button,
+p,
+input,
+label {
+    font-size: var(--text);
+}
+
+h2 {
+    font-size: var(--header2);
+}
+
+h3 {
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+    font-size: var(--text);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Ruhl", sans-serif;
+}
+
+h1 {
+    font-family: "Vibes", sans-serif;
+}
+
+body {
+    background-image: url(/Images/Pictures/pexels-pixabay-355288.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Nav Setion*/
+
+.main-head {
+    background-color: transparent;
+    display: flex;
+}
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    color: black;
+}
+
+.logo-dunamis {
+    display: flex;
+    flex: 3 1 20rem;
+}
+
+.logo-dunamis img {
+    height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 20rem;
+}
+
+
+/*Services*/
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 25rem;
+    min-height: 45vh;
+    background-size: cover;
+    margin: 2rem 4rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #165a72;
+    color: white;
+    border-radius: 10px;
+}
+
+.cards img {
+    height: 200px;
+    margin: 2rem;
+}
+
+.card h3,
+.card p {
+    padding: 1rem;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: transparent;
+}
+
+h1 {
+    color: white;
+    display: flex;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: flex-end;
+    align-items: center;
+    border-image-width: 0px;
+}
+
+footer h5 {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+}
+
+.footer-wrapper img {
+    height: 3vh;
+    padding-left: 2rem;
+}

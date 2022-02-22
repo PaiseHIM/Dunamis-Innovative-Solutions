@@ -1,0 +1,260 @@
+/* Global Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Ruhl";
+    src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Ruhl Medium";
+    src: url(/fonts/FrankRuhlLibre-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Vibes";
+    src: url(/fonts/GreatVibes-Regular.ttf );
+}
+
+@font-face {
+    font-family: "Courgette";
+    src: url(/fonts/Courgette-Regular.ttf);
+}
+
+html {
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(.5rem + 1vw);
+    --big: calc(2rem + 1vw);
+    --specail-color: #44213e;
+    --background-color: #414141;
+    --gray_text: #383434;
+}
+
+p {
+    color: white;
+    font-family: "Courgette", sans-serif;
+}
+
+h1 {
+    font-size: var(--header1);
+    color: black;
+}
+
+li,
+button,
+p,
+input,
+label {
+    font-size: var(--text);
+}
+
+h2 {
+    font-size: var(--header2);
+    font-family: "courgette", sans-serif;
+}
+
+h3 {
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+    font-size: var(--text);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Ruhl", sans-serif;
+}
+
+h1 {
+    font-family: "Vibes", sans-serif;
+}
+
+
+/*Nav Setion*/
+
+.main-head {
+    background-color: transparent;
+    ;
+}
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.logo-dunamis {
+    display: flex;
+    flex: 1 1 10rem;
+    height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 10rem;
+}
+
+
+/*BODY*/
+
+body {
+    background-image: url(/Images/Pictures/pexels-nathan-cowley-1300510.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.about-head {
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding-top: 2rem;
+    background-color: rgba(22, 91, 116, .5);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 58vh;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: rgba(22, 91, 116, .5);
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    font-size: var(--header1);
+}
+
+.photo {
+    height: 150px;
+    width: auto;
+    display: flex;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: transparent;
+}
+
+h1 {
+    color: white;
+    display: flex;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: flex-end;
+    align-items: center;
+    border-image-width: 0px;
+}
+
+footer h5 {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+}
+
+.footer-wrapper img {
+    height: 3vh;
+    padding-left: 2rem;
+}
+
+
+/* MEDIA QUERY*/
+
+@media screen and (max-width: 1660px) {
+    nav {
+        text-align: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .main-head img {
+        align-self: center;
+        max-height: 250px;
+        padding: 2rem;
+    }
+    .logo-dunamis img {
+        scale: 50%;
+    }
+    .about-head {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about-container {
+        height: fit-content;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1208px) {
+    html {
+        font-size: 100%;
+    }
+    .main-head li {
+        font-size: 1.5rem;
+    }
+    .about-head h2 {
+        font-size: 3rem;
+    }
+    .about-container p {
+        font-size: 1.5rem;
+    }
+    foooter h5 {
+        padding-bottom: 3rem;
+    }
+}

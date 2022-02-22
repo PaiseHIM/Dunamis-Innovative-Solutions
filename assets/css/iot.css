@@ -1,0 +1,287 @@
+/* Global Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Ruhl";
+    src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Ruhl Medium";
+    src: url(/fonts/FrankRuhlLibre-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Vibes";
+    src: url(/fonts/GreatVibes-Regular.ttf );
+}
+
+@font-face {
+    font-family: "Courgette";
+    src: url(/fonts/Courgette-Regular.ttf);
+}
+
+html {
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(.8rem + 1vw);
+    --text: calc(.5rem + 1vw);
+    --big: calc(2rem + 1vw);
+    --specail-color: #44213e;
+    --background-color: #414141;
+    --gray_text: #383434;
+}
+
+p {
+    color: white;
+    font-family: "Courgette", sans-serif;
+}
+
+h1 {
+    font-size: var(--header1);
+    color: black;
+}
+
+li,
+button,
+p,
+input,
+label {
+    font-size: var(--text);
+}
+
+h2 {
+    font-size: var(--header2);
+    font-family: "courgette", sans-serif;
+}
+
+h3 {
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+    font-size: var(--header4);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Ruhl", sans-serif;
+}
+
+h1 {
+    font-family: "Vibes", sans-serif;
+}
+
+
+/*Nav Setion*/
+
+.main-head {
+    background-color: #165a72;
+}
+
+nav {
+    min-height: 8vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.logo-dunamis {
+    height: 10vh;
+    display: flex;
+    flex: 1 1 20rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+
+
+/*BODY*/
+
+.iot-head {
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+body {
+    background-color: #165a72;
+}
+
+.iot-gridcontainer {
+    display: grid;
+    height: 65vh;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 210px 210px 210px;
+    column-gap: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.iot-gridcontainer img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.Text {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.Text p {
+    font-size: var(--header1);
+}
+
+.photo-tablet {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.photo-strawberry {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.photo-sholdering {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.photo-city {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.photo-device {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.photo-tent {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #165a72;
+}
+
+h1 {
+    color: white;
+    display: flex;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 8vh;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: flex-end;
+    align-items: center;
+    border-image-width: 0px;
+}
+
+footer h5 {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+}
+
+.footer-wrapper img {
+    height: 3vh;
+    padding-left: 2rem;
+}
+
+
+/* MEDIA QUERY*/
+
+@media screen and (max-width: 1660px) {
+    nav {
+        text-align: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .main-head img {
+        align-self: center;
+        max-height: 250px;
+        padding: 2rem;
+    }
+    .logo-dunamis img {
+        scale: 50%;
+    }
+    .iot-head h2 {
+        font-size: 4rem;
+    }
+    .iot-gridcontainer p {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:1062px) {
+    html {
+        font-size: 100%;
+    }
+    .main-head li {
+        font-size: 1.5rem;
+    }
+    .iot-head h2 {
+        font-size: 2rem;
+    }
+    .iot-gridcontainer p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .iot-gridcontainer p {
+        font-size: 1rem;
+    }
+}
